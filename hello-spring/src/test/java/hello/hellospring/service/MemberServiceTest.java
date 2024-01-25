@@ -35,7 +35,7 @@ class MemberServiceTest {
         member1.setName("spring");
 
         Member member2 = new Member();
-        member2.setName("spring1");
+        member2.setName("spring");
         //WHEN
         memberService.join(member1);
         IllegalStateException e = assertThrows(IllegalStateException.class,

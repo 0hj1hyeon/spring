@@ -41,7 +41,6 @@ public class LoginController {
             return "login/loginForm"; // 로그인 폼으로 다시 이동
         }
     }
-
     // 로그아웃 처리
     @GetMapping("/logout")
     public String logout(HttpSession session) {

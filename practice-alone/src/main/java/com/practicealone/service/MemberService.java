@@ -19,7 +19,6 @@ public class MemberService {
     public boolean login(String uid, String upw) {
         // 아이디로 회원을 찾습니다.
         Member member = memberRepository.findByUid(uid);
-
         // 회원이 존재하고, 입력된 비밀번호와 회원의 비밀번호가 일치하는지 확인합니다.
         if (member != null && member.getUpw().equals(upw)) {
             System.out.println("login success in memberservice");
@@ -29,6 +28,5 @@ public class MemberService {
             return false; // 로그인 실패
         }
     }
-
 
 }

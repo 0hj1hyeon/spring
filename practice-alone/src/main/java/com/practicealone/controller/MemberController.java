@@ -16,7 +16,7 @@ public class MemberController {
     @GetMapping("/save")
     public String createForm(){
         System.out.println("hi");
-        return "members/creatememberform";
+        return "members/signup";
     }
     @PostMapping("/save")
     public String memberCreate(@RequestBody Member member){
